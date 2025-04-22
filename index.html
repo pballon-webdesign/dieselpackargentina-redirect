@@ -1,11 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
-    <meta http-equiv="refresh" content="0; url=https://www.dieselpack.com" />
-    <script>window.location.href = "https://www.dieselpack.com";</script>
+    <meta charset="UTF-8" />
     <title>Redirigiendo...</title>
+    <script>
+      const currentDomain = location.hostname;
+      const redirectTo = "https://www.dieselpack.com";
+
+      if (
+        currentDomain === "dieselpackargentina.com" ||
+        currentDomain === "www.dieselpackargentina.com"
+      ) {
+        window.location.href = redirectTo;
+      }
+    </script>
   </head>
   <body>
     Si no sos redirigido automáticamente, <a href="https://www.dieselpack.com">hacé clic acá</a>.
   </body>
 </html>
+
